@@ -1,0 +1,1590 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  z-index: 99;
+}
+header .logo {
+  width: 30%;
+  margin-left: 40px;
+}
+header .logo img {
+  width: 100%;
+}
+header .menuitems {
+  display: none;
+}
+header .links {
+  width: 8%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 150px;
+}
+header .links img {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.banner .home {
+  margin-bottom: 120px;
+}
+.banner .home img {
+  margin-bottom: 50px;
+}
+.banner h1 {
+  color: rgb(0, 0, 0);
+  font-family: "stim";
+  font-size: 65px;
+  line-height: 100px;
+  margin-top: 80px;
+  margin-left: 60px;
+  margin-bottom: 120px;
+}
+.banner h1 span {
+  color: rgb(255, 123, 0);
+}
+
+.about {
+  background-color: black;
+}
+.about p {
+  color: white;
+}
+.about .info {
+  background-color: rgb(255, 123, 0);
+  color: black;
+  position: absolute;
+  top: 800px;
+  width: 100%;
+  margin-left: -12px;
+}
+.about .info h5 {
+  font-family: "stim";
+  font-size: 25px;
+  margin-bottom: 20px;
+  line-height: 45px;
+  margin-top: 75px;
+  margin-left: 20px;
+}
+.about .info p {
+  color: black;
+  font-family: "regular";
+  font-size: 12px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 90px;
+  line-height: 25px;
+}
+.about img {
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+.about .listing {
+  padding-top: 450px;
+}
+.about .listing p {
+  color: white;
+  font-family: "regular";
+  line-height: 25px;
+  font-size: 12px;
+  margin-left: 20px;
+  margin-top: 160px;
+}
+.about .listing ul {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 80px;
+  list-style: circle;
+}
+.about .listing ul li {
+  color: white;
+  font-family: "regular";
+  line-height: 25px;
+  font-size: 12px;
+  list-style: circle;
+}
+.about .meals {
+  background-color: white;
+  width: 40%;
+  height: 120px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.about .meals h4 {
+  color: black;
+  font-family: "stim";
+  font-size: 25px;
+  margin-left: 15px;
+  margin-top: 35px;
+}
+.about .meals p {
+  color: black;
+  font-family: "regular";
+  font-size: 15px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.about .families {
+  background-color: white;
+  width: 40%;
+  height: 120px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.about .families h4 {
+  color: black;
+  font-family: "stim";
+  font-size: 25px;
+  margin-left: 15px;
+  margin-top: 35px;
+}
+.about .families p {
+  color: black;
+  font-family: "regular";
+  font-size: 15px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.about .target {
+  background-color: rgb(255, 123, 0);
+  width: 80%;
+  height: 120px;
+  margin-bottom: 80px;
+  margin-left: 40px;
+}
+.about .target h4 {
+  color: black;
+  font-family: "stim";
+  font-size: 25px;
+  margin-left: 15px;
+  margin-top: 35px;
+}
+.about .target p {
+  color: black;
+  font-family: "regular";
+  font-size: 15px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.aims .mob {
+  display: flex;
+}
+.aims .mob .line {
+  width: 95px;
+  height: 1.8px;
+  background-color: rgb(255, 123, 0);
+  margin-top: 132px;
+  margin-left: 15px;
+}
+.aims .para1 {
+  margin-bottom: 20px;
+}
+.aims .para2 {
+  margin-bottom: 100px;
+}
+.aims img {
+  width: 100vw;
+}
+.aims h3 {
+  font-family: "stim";
+  font-size: 25px;
+  color: rgb(255, 123, 0);
+  margin-left: 20px;
+  margin-bottom: 40px;
+  margin-top: 120px;
+}
+.aims p {
+  color: black;
+  font-family: "regular";
+  font-size: 12px;
+  line-height: 25px;
+  margin-left: 20px;
+}
+
+.service {
+  background-color: black;
+}
+.service .history {
+  background-color: rgb(255, 120, 0);
+  color: white;
+  width: 470px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  margin-left: 0px;
+}
+.service .history h3 {
+  line-height: 60px;
+  font-family: "stim";
+  font-size: 35px;
+  margin-left: 20px;
+}
+.service .history p {
+  font-family: "regular";
+  font-size: 12px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  margin-left: 20px;
+}
+.service .history span {
+  color: black;
+}
+.service .aims1 .aotm {
+  display: flex;
+  margin-left: 70px;
+}
+.service .aims1 .aotm h2 {
+  color: rgb(255, 120, 0);
+  font-family: "stim";
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  margin-left: -40px;
+}
+.service .aims1 .aotm .dash {
+  width: 95px;
+  height: 1.8px;
+  background-color: rgb(255, 123, 0);
+  margin-top: 72px;
+  margin-left: 5px;
+}
+.service .aims1 p {
+  color: white;
+  font-family: "regular";
+  font-size: 13px;
+}
+.service .aims1 .first {
+  line-height: 25px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.service .aims1 .second {
+  line-height: 25px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.service .aims1 .third {
+  line-height: 25px;
+  margin-bottom: 90px;
+  margin-left: 10px;
+}
+
+.donate {
+  margin-left: -50px;
+}
+.donate h2 {
+  color: rgb(255, 123, 0);
+  font-family: "stim";
+  font-size: 70px;
+  line-height: 105px;
+  margin-left: 80px;
+  margin-top: 90px;
+}
+.donate h5 {
+  font-size: 13px;
+  font-family: "stim";
+  margin-top: 80px;
+  line-height: 25px;
+  margin-left: 80px;
+}
+.donate .details {
+  font-size: 13px;
+  font-family: "regular";
+  line-height: 25px;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+.donate .ecocash {
+  font-size: 13px;
+  font-family: "regular";
+  line-height: 25px;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+.donate .imagesA {
+  padding: 20px 50px;
+  margin-top: 100px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  line-height: 60px;
+}
+.donate .imagesA img {
+  width: 65%;
+  margin-left: 10px;
+  padding-top: 40px;
+}
+.donate .imagesB {
+  margin-left: 120px;
+  margin-top: 20px;
+  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+}
+.donate .imagesB img {
+  width: 65%;
+  margin-left: 10px;
+  padding-top: 40px;
+}
+
+.footer {
+  background-color: black;
+}
+.footer .information {
+  display: flex;
+  margin-left: 0px;
+}
+.footer .information .contact {
+  margin-left: 20px;
+}
+.footer .information .contact h5 {
+  font-family: "stim";
+  font-size: 15px;
+  color: white;
+  margin-top: 90px;
+  margin-bottom: 25px;
+}
+.footer .information .contact p {
+  color: white;
+  font-size: 13px;
+  font-family: "regular";
+  line-height: 25px;
+}
+.footer .information .email {
+  margin-left: 70px;
+}
+.footer .information .email h5 {
+  font-family: "stim";
+  font-size: 15px;
+  color: white;
+  margin-top: 90px;
+  margin-bottom: 25px;
+}
+.footer .information .email p {
+  color: white;
+  font-size: 13px;
+  font-family: "regular";
+  line-height: 25px;
+}
+.footer .links {
+  margin-left: 0px;
+}
+.footer .links h5 {
+  font-family: "stim";
+  font-size: 15px;
+  color: white;
+  margin-top: 90px;
+  margin-bottom: 25px;
+}
+.footer .links p {
+  color: white;
+  font-size: 13px;
+  font-family: "regular";
+  line-height: 25px;
+  word-spacing: 35px;
+}
+.footer hr {
+  color: gray;
+  margin-top: 80px;
+}
+.footer .follow {
+  display: flex;
+  margin-bottom: 80px;
+  margin-top: 70px;
+}
+.footer .follow p {
+  color: white;
+  font-size: 13px;
+  font-family: "regular";
+  line-height: 25px;
+  margin-left: 75px;
+}
+.footer .follow .pics {
+  color: white;
+  filter: invert(1);
+  width: 7%;
+  display: flex;
+  margin-left: 15px;
+}
+.footer .follow .pics img {
+  width: 100%;
+  margin-left: 15px;
+}
+.footer .mobi {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+.footer .mobi p {
+  color: rgb(155, 153, 153);
+  font-size: 13px;
+  font-family: "regular";
+  line-height: 25px;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    z-index: 99;
+  }
+  header .logo {
+    width: 20%;
+    margin-left: 20px;
+  }
+  header .logo img {
+    width: 100%;
+  }
+  header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  header .menu .menuitems {
+    display: flex;
+    flex-direction: row;
+    padding: 2px 30px;
+    margin-bottom: 20px;
+  }
+  header .menu .menuitems a {
+    color: black;
+    text-decoration: none;
+    font-family: "stim";
+    font-size: 18px;
+  }
+  header .menu .menuitems a:hover {
+    color: rgb(255, 120, 0);
+    text-decoration: underline;
+    transition: 1.5s;
+  }
+  header .links {
+    width: 3%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    display: none;
+  }
+  header .links img {
+    width: 100%;
+    margin-top: 110px;
+  }
+  .banner {
+    width: 100vw;
+  }
+  .banner .home {
+    margin-bottom: 60px;
+  }
+  .banner .home img {
+    margin-top: 100px;
+  }
+  .banner h1 {
+    color: rgb(0, 0, 0);
+    font-family: "stim";
+    font-size: 65px;
+    line-height: 100px;
+    margin-top: 80px;
+    margin-left: 60px;
+    margin-bottom: 120px;
+  }
+  .banner h1 span {
+    color: rgb(255, 123, 0);
+  }
+  .about {
+    background-color: black;
+  }
+  .about p {
+    color: white;
+  }
+  .about .info {
+    background-color: rgb(255, 123, 0);
+    color: black;
+    position: absolute;
+    top: 600px;
+    width: 50%;
+    margin-left: 0px;
+  }
+  .about .info h5 {
+    font-family: "stim";
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 45px;
+    margin-top: 75px;
+    margin-left: 20px;
+  }
+  .about .info p {
+    color: black;
+    font-family: "regular";
+    font-size: 12px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 90px;
+    line-height: 25px;
+  }
+  .about img {
+    width: 80%;
+    margin-top: 120px;
+    margin-left: 60px;
+  }
+  .about .listing {
+    padding-top: 450px;
+  }
+  .about .listing p {
+    color: white;
+    font-family: "regular";
+    line-height: 25px;
+    font-size: 12px;
+    margin-left: 60px;
+    margin-top: 90px;
+  }
+  .about .listing ul {
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-bottom: 80px;
+    list-style: circle;
+  }
+  .about .listing ul li {
+    color: white;
+    font-family: "regular";
+    line-height: 25px;
+    font-size: 12px;
+    list-style: circle;
+  }
+  .about .meals {
+    background-color: white;
+    width: 25%;
+    height: 120px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+  .about .meals h4 {
+    color: black;
+    font-family: "stim";
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 35px;
+  }
+  .about .meals p {
+    color: black;
+    font-family: "regular";
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  .about .families {
+    background-color: white;
+    width: 25%;
+    height: 120px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+  }
+  .about .families h4 {
+    color: black;
+    font-family: "stim";
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 35px;
+  }
+  .about .families p {
+    color: black;
+    font-family: "regular";
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  .about .target {
+    background-color: rgb(255, 123, 0);
+    width: 45%;
+    height: 120px;
+    margin-left: 5px;
+    margin-top: 40px;
+  }
+  .about .target h4 {
+    color: black;
+    font-family: "stim";
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 35px;
+  }
+  .about .target p {
+    color: black;
+    font-family: "regular";
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  .aims .mob {
+    display: flex;
+  }
+  .aims .mob .line {
+    width: 95px;
+    height: 1.8px;
+    background-color: rgb(255, 123, 0);
+    margin-top: 132px;
+    margin-left: 35px;
+  }
+  .aims .para1 {
+    margin-bottom: 20px;
+  }
+  .aims .para2 {
+    margin-bottom: 100px;
+  }
+  .aims img {
+    width: 100vw;
+  }
+  .aims h3 {
+    font-family: "stim";
+    font-size: 25px;
+    color: rgb(255, 123, 0);
+    margin-left: 20px;
+    margin-bottom: 40px;
+    margin-top: 120px;
+  }
+  .aims p {
+    color: black;
+    font-family: "regular";
+    font-size: 12px;
+    line-height: 25px;
+    margin-left: 20px;
+  }
+  .service {
+    background-color: black;
+  }
+  .service .history {
+    background-color: rgb(255, 120, 0);
+    color: white;
+    width: 470px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+  }
+  .service .history h3 {
+    line-height: 60px;
+    font-family: "stim";
+    font-size: 35px;
+    margin-left: 60px;
+  }
+  .service .history p {
+    font-family: "regular";
+    font-size: 12px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-left: 60px;
+  }
+  .service .history span {
+    color: black;
+  }
+  .service .aims1 .aotm {
+    display: flex;
+    margin-left: 70px;
+  }
+  .service .aims1 .aotm h2 {
+    color: rgb(255, 120, 0);
+    font-family: "stim";
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+  }
+  .service .aims1 .aotm .dash {
+    width: 95px;
+    height: 1.8px;
+    background-color: rgb(255, 123, 0);
+    margin-top: 72px;
+    margin-left: 35px;
+  }
+  .service .aims1 p {
+    color: white;
+    font-family: "regular";
+    font-size: 13px;
+  }
+  .service .aims1 .first {
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+  }
+  .service .aims1 .second {
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+  }
+  .service .aims1 .third {
+    line-height: 25px;
+    margin-bottom: 90px;
+    margin-left: 70px;
+  }
+  .donate {
+    margin-left: -50px;
+  }
+  .donate h2 {
+    color: rgb(255, 123, 0);
+    font-family: "stim";
+    font-size: 70px;
+    line-height: 105px;
+    margin-left: 40px;
+    margin-top: 90px;
+  }
+  .donate h5 {
+    font-size: 13px;
+    font-family: "stim";
+    margin-top: 130px;
+    line-height: 25px;
+  }
+  .donate .details {
+    font-size: 13px;
+    font-family: "regular";
+    line-height: 25px;
+    margin-top: 20px;
+  }
+  .donate .ecocash {
+    font-size: 13px;
+    font-family: "regular";
+    line-height: 25px;
+    margin-top: 20px;
+  }
+  .donate .imagesA {
+    padding: 20px 50px;
+    margin-top: 120px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+  }
+  .donate .imagesA .image1 {
+    width: 100%;
+    margin-bottom: -80px;
+  }
+  .donate .imagesA .image1 img {
+    width: 78%;
+  }
+  .donate .imagesA .image2 {
+    width: 100%;
+  }
+  .donate .imagesA .image2 .imagesA {
+    padding: 20px 50px;
+    margin-top: 120px;
+    margin-left: 40px;
+  }
+  .donate .imagesA .image2 .imagesA .image1 {
+    width: 100%;
+    margin-bottom: -30px;
+  }
+  .donate .imagesA .image2 .imagesA .image1 img {
+    width: 70%;
+  }
+  .donate .imagesA .image2 .imagesA .image2 {
+    width: 100%;
+    margin-bottom: -30px;
+    margin-left: -50px;
+  }
+  .donate .imagesA .image2 .imagesA .image2 img {
+    width: 100%;
+  }
+  .donate .imagesA .image2 .imagesA .image3 {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+  .donate .imagesA .image2 .imagesA .image3 img {
+    width: 95%;
+  }
+  .donate .imagesA .image2 .imagesA .image4 {
+    width: 100%;
+    margin-left: 40px;
+  }
+  .donate .imagesA .image2 .imagesA .image4 img {
+    width: 75%;
+  }
+  .donate .imagesA .image2 .imagesA .image5 {
+    width: 100%;
+    margin-left: 40px;
+  }
+  .donate .imagesA .image2 .imagesA .image5 img {
+    width: 70%;
+  }
+  .donate .imagesA .image2 .imagesA img {
+    width: 18%;
+    margin-left: 10px;
+  }
+  .donate .imagesA .image2 .imagesB {
+    margin-left: 60px;
+    margin-top: 0px;
+    margin-bottom: 90px;
+  }
+  .donate .imagesA .image2 .imagesB .image6 {
+    width: 100%;
+  }
+  .donate .imagesA .image2 .imagesB .image6 img {
+    width: 70%;
+  }
+  .donate .imagesA .image2 .imagesB .image7 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .donate .imagesA .image2 .imagesB .image7 img {
+    width: 90%;
+  }
+  .donate .imagesA .image2 .imagesB .image8 {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .donate .imagesA .image2 .imagesB .image8 img {
+    width: 70%;
+  }
+  .donate .imagesA .image2 .imagesB .image9 {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .donate .imagesA .image2 .imagesB .image9 img {
+    width: 70%;
+  }
+  .donate .imagesA .image2 .imagesB .image10 {
+    width: 100%;
+    margin-left: -50px;
+  }
+  .donate .imagesA .image2 .imagesB .image10 img {
+    width: 70%;
+  }
+  .donate .imagesA .image2 .imagesB img {
+    width: 18%;
+    margin-left: 10px;
+  }
+  .donate .imagesA .image2 img {
+    width: 100%;
+  }
+  .donate .imagesA .image3 {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+  .donate .imagesA .image3 img {
+    width: 95%;
+  }
+  .donate .imagesA .image4 {
+    width: 100%;
+    margin-left: 40px;
+  }
+  .donate .imagesA .image4 img {
+    width: 90%;
+  }
+  .donate .imagesA .image5 {
+    width: 100%;
+    margin-left: 40px;
+  }
+  .donate .imagesA .image5 img {
+    width: 90%;
+  }
+  .donate .imagesA img {
+    width: 18%;
+    margin-left: 10px;
+  }
+  .donate .imagesB {
+    margin-left: 60px;
+    margin-top: 0px;
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: row;
+  }
+  .donate .imagesB .image6 {
+    width: 100%;
+  }
+  .donate .imagesB .image6 img {
+    width: 80%;
+  }
+  .donate .imagesB .image7 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .donate .imagesB .image7 img {
+    width: 90%;
+  }
+  .donate .imagesB .image8 {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .donate .imagesB .image8 img {
+    width: 70%;
+  }
+  .donate .imagesB .image9 {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .donate .imagesB .image9 img {
+    width: 70%;
+  }
+  .donate .imagesB .image10 {
+    width: 100%;
+    margin-left: -10px;
+  }
+  .donate .imagesB .image10 img {
+    width: 70%;
+  }
+  .donate .imagesB img {
+    width: 18%;
+    margin-left: 10px;
+  }
+  .footer {
+    background-color: black;
+  }
+  .footer .information {
+    display: flex;
+    margin-left: 0px;
+  }
+  .footer .information .contact {
+    margin-left: 0px;
+  }
+  .footer .information .contact h5 {
+    font-family: "stim";
+    font-size: 15px;
+    color: white;
+    margin-top: 90px;
+    margin-bottom: 25px;
+  }
+  .footer .information .contact p {
+    color: white;
+    font-size: 13px;
+    font-family: "regular";
+    line-height: 25px;
+  }
+  .footer .information .email {
+    margin-left: 20px;
+  }
+  .footer .information .email h5 {
+    font-family: "stim";
+    font-size: 15px;
+    color: white;
+    margin-top: 90px;
+    margin-bottom: 25px;
+  }
+  .footer .information .email p {
+    color: white;
+    font-size: 13px;
+    font-family: "regular";
+    line-height: 25px;
+  }
+  .footer .links {
+    margin-left: 0px;
+  }
+  .footer .links h5 {
+    font-family: "stim";
+    font-size: 15px;
+    color: white;
+    margin-top: 90px;
+    margin-bottom: 25px;
+  }
+  .footer .links p {
+    color: white;
+    font-size: 13px;
+    font-family: "regular";
+    line-height: 25px;
+    word-spacing: 35px;
+  }
+  .footer hr {
+    color: rgb(220, 220, 220);
+    margin-top: 80px;
+  }
+  .footer .follow {
+    display: flex;
+    margin-bottom: 80px;
+    margin-top: 70px;
+  }
+  .footer .follow p {
+    color: white;
+    font-size: 13px;
+    font-family: "regular";
+    line-height: 25px;
+    margin-left: 5px;
+  }
+  .footer .follow .pics {
+    color: white;
+    filter: invert(1);
+    width: 10%;
+    display: flex;
+    margin-left: 15px;
+  }
+  .footer .follow .pics img {
+    width: 100%;
+    margin-left: 15px;
+  }
+  .footer .mobi {
+    margin-top: 70px;
+  }
+  .footer .mobi p {
+    color: rgb(155, 153, 153);
+    font-size: 13px;
+    font-family: "regular";
+    line-height: 25px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    z-index: 99;
+  }
+  header .logo {
+    width: 20%;
+    margin-left: 80px;
+  }
+  header .logo img {
+    width: 100%;
+  }
+  header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 320px;
+  }
+  header .menu .menuitems {
+    display: flex;
+    flex-direction: row;
+    padding: 2px 30px;
+    margin-bottom: 20px;
+  }
+  header .menu .menuitems a {
+    color: black;
+    text-decoration: none;
+    font-family: "stim";
+    font-size: 18px;
+  }
+  header .menu .menuitems a:hover {
+    color: rgb(255, 120, 0);
+    text-decoration: underline;
+    transition: 1.5s;
+  }
+  header .links {
+    width: 3%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+  }
+  header .links img {
+    width: 100%;
+    margin-top: 110px;
+  }
+  .banner .home {
+    margin-bottom: 120px;
+  }
+  .banner .home img {
+    margin-bottom: 50px;
+  }
+  .banner h1 {
+    color: rgb(0, 0, 0);
+    font-family: "stim";
+    font-size: 65px;
+    line-height: 100px;
+    margin-top: 80px;
+    margin-left: 60px;
+    margin-bottom: 120px;
+  }
+  .banner h1 span {
+    color: rgb(255, 123, 0);
+  }
+  .about {
+    background-color: black;
+  }
+  .about p {
+    color: white;
+  }
+  .about .info {
+    background-color: rgb(255, 123, 0);
+    color: black;
+    position: absolute;
+    top: 900px;
+    width: 40%;
+    margin-left: 60px;
+  }
+  .about .info h5 {
+    font-family: "stim";
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 45px;
+    margin-top: 75px;
+    margin-left: 90px;
+  }
+  .about .info p {
+    color: black;
+    font-family: "regular";
+    font-size: 12px;
+    margin-top: 30px;
+    margin-left: 90px;
+    margin-bottom: 90px;
+    line-height: 25px;
+  }
+  .about img {
+    width: 80%;
+    margin-top: 220px;
+    margin-left: 60px;
+  }
+  .about .listing {
+    padding-top: 450px;
+  }
+  .about .listing p {
+    color: white;
+    font-family: "regular";
+    line-height: 25px;
+    font-size: 12px;
+    margin-left: 60px;
+    margin-top: 90px;
+  }
+  .about .listing ul {
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-bottom: 180px;
+    list-style: circle;
+  }
+  .about .listing ul li {
+    color: white;
+    font-family: "regular";
+    line-height: 25px;
+    font-size: 12px;
+    list-style: circle;
+  }
+  .about .meals {
+    background-color: white;
+    width: 20%;
+    height: 120px;
+    margin-bottom: 100px;
+    margin-left: 80px;
+  }
+  .about .meals h4 {
+    color: black;
+    font-family: "stim";
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 35px;
+  }
+  .about .meals p {
+    color: black;
+    font-family: "regular";
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  .about .families {
+    background-color: white;
+    width: 20%;
+    height: 120px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+  }
+  .about .families h4 {
+    color: black;
+    font-family: "stim";
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 35px;
+  }
+  .about .families p {
+    color: black;
+    font-family: "regular";
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  .about .target {
+    background-color: rgb(255, 123, 0);
+    width: 45%;
+    height: 120px;
+    margin-bottom: 100px;
+    margin-left: 20px;
+  }
+  .about .target h4 {
+    color: black;
+    font-family: "stim";
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 35px;
+  }
+  .about .target p {
+    color: black;
+    font-family: "regular";
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  .aims .mob {
+    display: flex;
+  }
+  .aims .mob .line {
+    width: 95px;
+    height: 1.8px;
+    background-color: rgb(255, 123, 0);
+    margin-top: 132px;
+    margin-left: 35px;
+  }
+  .aims .para1 {
+    margin-bottom: 20px;
+  }
+  .aims .para2 {
+    margin-bottom: 100px;
+  }
+  .aims img {
+    width: 100vw;
+  }
+  .aims h3 {
+    font-family: "stim";
+    font-size: 25px;
+    color: rgb(255, 123, 0);
+    margin-left: 140px;
+    margin-bottom: 40px;
+    margin-top: 120px;
+  }
+  .aims p {
+    color: black;
+    font-family: "regular";
+    font-size: 12px;
+    line-height: 25px;
+    margin-left: 140px;
+  }
+  .service {
+    background-color: black;
+  }
+  .service .history {
+    background-color: rgb(255, 120, 0);
+    color: white;
+    width: 470px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 80px;
+  }
+  .service .history h3 {
+    line-height: 60px;
+    font-family: "stim";
+    font-size: 35px;
+    margin-left: 60px;
+  }
+  .service .history p {
+    font-family: "regular";
+    font-size: 12px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    margin-left: 60px;
+  }
+  .service .history span {
+    color: black;
+  }
+  .service .aims1 .aotm {
+    display: flex;
+    margin-left: 70px;
+  }
+  .service .aims1 .aotm h2 {
+    color: rgb(255, 120, 0);
+    font-family: "stim";
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 120px;
+  }
+  .service .aims1 .aotm .dash {
+    width: 95px;
+    height: 1.8px;
+    background-color: rgb(255, 123, 0);
+    margin-top: 132px;
+    margin-left: 35px;
+  }
+  .service .aims1 p {
+    color: white;
+    font-family: "regular";
+    font-size: 13px;
+  }
+  .service .aims1 .first {
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+  }
+  .service .aims1 .second {
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+  }
+  .service .aims1 .third {
+    line-height: 25px;
+    margin-bottom: 90px;
+    margin-left: 70px;
+  }
+  .donate {
+    margin-left: -50px;
+  }
+  .donate h2 {
+    color: rgb(255, 123, 0);
+    font-family: "stim";
+    font-size: 70px;
+    line-height: 105px;
+    margin-left: 260px;
+    margin-top: 190px;
+  }
+  .donate h5 {
+    font-size: 13px;
+    font-family: "stim";
+    margin-top: 210px;
+    line-height: 25px;
+  }
+  .donate .details {
+    font-size: 13px;
+    font-family: "regular";
+    line-height: 25px;
+    margin-top: 20px;
+  }
+  .donate .ecocash {
+    font-size: 13px;
+    font-family: "regular";
+    line-height: 25px;
+    margin-top: 20px;
+  }
+  .donate .imagesA {
+    padding: 20px 50px;
+    margin-top: 120px;
+    margin-left: 40px;
+  }
+  .donate .imagesA .image1 {
+    width: 100%;
+    margin-bottom: -30px;
+  }
+  .donate .imagesA .image1 img {
+    width: 70%;
+  }
+  .donate .imagesA .image2 {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: -50px;
+  }
+  .donate .imagesA .image2 img {
+    width: 100%;
+  }
+  .donate .imagesA .image3 {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  .donate .imagesA .image3 img {
+    width: 95%;
+  }
+  .donate .imagesA .image4 {
+    width: 100%;
+    margin-left: 40px;
+  }
+  .donate .imagesA .image4 img {
+    width: 75%;
+  }
+  .donate .imagesA .image5 {
+    width: 100%;
+    margin-left: 40px;
+  }
+  .donate .imagesA .image5 img {
+    width: 70%;
+  }
+  .donate .imagesA img {
+    width: 18%;
+    margin-left: 10px;
+  }
+  .donate .imagesB {
+    margin-left: 60px;
+    margin-top: 0px;
+    margin-bottom: 90px;
+  }
+  .donate .imagesB .image6 {
+    width: 100%;
+  }
+  .donate .imagesB .image6 img {
+    width: 70%;
+  }
+  .donate .imagesB .image7 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .donate .imagesB .image7 img {
+    width: 90%;
+  }
+  .donate .imagesB .image8 {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .donate .imagesB .image8 img {
+    width: 70%;
+  }
+  .donate .imagesB .image9 {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .donate .imagesB .image9 img {
+    width: 70%;
+  }
+  .donate .imagesB .image10 {
+    width: 100%;
+    margin-left: -50px;
+  }
+  .donate .imagesB .image10 img {
+    width: 70%;
+  }
+  .donate .imagesB img {
+    width: 18%;
+    margin-left: 10px;
+  }
+  .footer {
+    background-color: black;
+  }
+  .footer .information {
+    display: flex;
+    margin-left: 0px;
+  }
+  .footer .information .contact {
+    margin-left: 70px;
+  }
+  .footer .information .contact h5 {
+    font-family: "stim";
+    font-size: 15px;
+    color: white;
+    margin-top: 90px;
+    margin-bottom: 25px;
+  }
+  .footer .information .contact p {
+    color: white;
+    font-size: 13px;
+    font-family: "regular";
+    line-height: 25px;
+  }
+  .footer .information .email {
+    margin-left: 90px;
+  }
+  .footer .information .email h5 {
+    font-family: "stim";
+    font-size: 15px;
+    color: white;
+    margin-top: 90px;
+    margin-bottom: 25px;
+  }
+  .footer .information .email p {
+    color: white;
+    font-size: 13px;
+    font-family: "regular";
+    line-height: 25px;
+  }
+  .footer .links {
+    margin-left: 0px;
+  }
+  .footer .links h5 {
+    font-family: "stim";
+    font-size: 15px;
+    color: white;
+    margin-top: 90px;
+    margin-bottom: 45px;
+  }
+  .footer .links p {
+    color: white;
+    font-size: 13px;
+    font-family: "regular";
+    line-height: 25px;
+    word-spacing: 35px;
+  }
+  .footer hr {
+    color: gray;
+    margin-top: 80px;
+  }
+  .footer .follow {
+    display: flex;
+    margin-bottom: 80px;
+    margin-top: 70px;
+  }
+  .footer .follow p {
+    color: white;
+    font-size: 13px;
+    font-family: "regular";
+    line-height: 25px;
+    margin-left: 75px;
+  }
+  .footer .follow .pics {
+    color: white;
+    filter: invert(1);
+    width: 5%;
+    display: flex;
+    margin-left: 15px;
+  }
+  .footer .follow .pics img {
+    width: 100%;
+    margin-left: 15px;
+  }
+  .footer .mobi {
+    margin-top: 70px;
+  }
+  .footer .mobi p {
+    color: rgb(155, 153, 153);
+    font-size: 13px;
+    font-family: "regular";
+    line-height: 25px;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
