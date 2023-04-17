@@ -1,47 +1,154 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-header{
-    background-color: #262626;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-li{
-    list-style: none;
-    a{color: white;text-decoration: none;}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.navbar{
-    min-height: 70px; display: flex; justify-content: space-between; align-items: center; padding: 0 24px;
-    .menu{display: flex; justify-content: space-between;align-items: center;gap: 60px;}
-}
 
+
+$italic :"regular";
+$bold : "bold";
+$bh1 :"semi-bold";
+$love : "stim";
+$stim : "goplah";
+$fav : "italic";
+
+.header{display: flex; justify-content: space-between;  align-items: center;
+.logo{width: 15%;z-index: 999; margin-left: 10px; margin-top: 10px;
+img{width: 100%;}
+}
+.menu{position: absolute; top: 0; background-color: rgba(0, 0, 0, 0.904);width: 100%;left: -100vw;opacity: 0; width: 100%; height: 100vh;display: flex;flex-direction: column;justify-content: center;align-items: center; z-index: 998;
+.menuitems{padding: 20px 0px; list-style-type: none;
+a{color: white;text-decoration: none;font-family: $italic;}
+}
+} 
 .hamburger{
-    display: none; cursor: pointer;
+    height: 40px; width: 40px; display: flex; flex-direction: column; justify-content: center; margin-right: 25px;
+    .bar{background-color: rgb(0, 0, 0); z-index: 999; height: 5px;width: 100%;  border-radius: 5px;}
+    #top{transform: translateY(-5px);transition: all .7s ease;}
+    #middle{transition: all .5s ease;}
+    #bottom{transform: translateY(5px); transition: all .7s ease;}
 }
-.bar{
-    display: block; width: 25px; height: 3px; margin: 5px auto; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; background-color: white;
+.open{opacity: 1;left: 0; transition: 1.5s ease; 
+    #top{transform: translateY(7px);rotate: 45deg;background-color: rgb(255, 120, 0);}
+    #middle{opacity: 0;}
+    #bottom{transform: translateY(-7px);rotate: -45deg;background-color: rgb(255, 120, 0)}
+}
+.links{width: 8%; display: flex; flex-direction: row; margin-left: 150px; display: none;
+    img{width: 100%; margin-top: 0px;}
+}
 }
 
 
-@media (min-width: 768px){
-    .hamburger{
-        display: block;
-    }
-
-    .hamburger.active.bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburger.active.bar:nth-child(1){
-        transform: translateY(8px); rotate: 45deg;
-    }
-    .hamburger.active.bar:nth-child(3){
-        transform: translateY(-8px); rotate: -45deg;
-    }
 
 
-    .menu{
-        position: fixed; left: -100%; top: 70px; gap: 0; flex-direction: column; background-color: #262626; width: 100%; transition: 0.3s; align-items: center;
-        .li{margin: 16px 0;}
-    }
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {  
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .header{display: flex; justify-content: space-between;  align-items: center;
+        .logo{width: 40%;z-index: 999; margin-left: 100px;
+        img{width: 100%;}
+        }
+        .menu{position: relative; top: 0; background-color: red;width: 100%;left:0;opacity: 1; width: 100%; height: 0vh;display: flex;flex-direction: row;align-items: flex-start; margin-left: 180px;
+        .menuitems{padding: 20px 30px; list-style-type: none; margin-top: -45px; 
+        a{color: black;text-decoration: none; font-family: $love; font-size: 20px;}
+        a:hover{color: rgb(255, 120, 0);text-decoration: underline; transition: 1.5s;}
+        }
+        }
+        .hamburger{
+            display: none;
+        }
+        .links{width: 5%; display: flex; flex-direction: row; margin-right: 50px;
+            img{width: 100%; margin-top: -80px;}
+     }
+        
+        }
+        
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
 }
